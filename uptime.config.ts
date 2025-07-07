@@ -355,4 +355,10 @@ const workerConfig: WorkerConfig = {
       monitor: any,
       timeIncidentStart: number,
       timeNow: number,
-      reason:
+      reason: string
+    ) => {
+      // This callback will be called when there's an incident for any monitor
+      // Write any Typescript code here
+    },
+  },
+}
