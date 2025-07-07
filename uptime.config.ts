@@ -14,9 +14,9 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     // Retained example group and added monitors from your first request
-    '🌐 Public': ['foo_monitor', 'xmj_181910_xyz'], // Added foo_monitor back and your blog
+    '🌐 Public': ['xmj_181910_xyz'], // Added foo_monitor back and your blog
     '🔐 Private': [
-      'test_tcp_monitor', // Retained example TCP monitor
+   //   'test_tcp_monitor', // Retained example TCP monitor
       'file258_file_hf_space',
       'flztb_wb_hf_space',
       'flztb_wb1_hf_space',
