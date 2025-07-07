@@ -26,25 +26,25 @@ const workerConfig: WorkerConfig = {
   // Define all your monitors here
   monitors: [
     // // Example HTTP Monitor
-    // {
-    //   // `id` should be unique, history will be kept if the `id` remains constant
-    //   id: 'foo_monitor',
-    //   // `name` is used at status page and callback message
-    //   name: 'My API Monitor',
-    //   // `method` should be a valid HTTP Method
-    //   method: 'POST',
-    //   // `target` is a valid URL
-    //   target: 'https://example.com',
-    //   // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-    //   tooltip: 'This is a tooltip for this monitor',
-    //   // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-    //   statusPageLink: 'https://example.com',
-    //   // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
-    //   hideLatencyChart: false,
-    //   // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-    //   expectedCodes: [200],
-    //   // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-    //   timeout: 10000,
+     {
+       // `id` should be unique, history will be kept if the `id` remains constant
+       id: 'foo_monitor',
+       // `name` is used at status page and callback message
+       name: 'My API Monitor',
+       // `method` should be a valid HTTP Method
+       method: 'POST',
+      // `target` is a valid URL
+       target: 'https://xmj.246801.xyz',
+       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+       tooltip: 'This is a tooltip for this monitor',
+       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+       statusPageLink: 'https://xmj.246801.xyz',
+       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
+       hideLatencyChart: false,
+       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+       expectedCodes: [200],
+       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+       timeout: 10000,
     //   // [OPTIONAL] headers to be sent
     //   headers: {
     //     'User-Agent': 'Uptimeflare',
