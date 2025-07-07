@@ -5,7 +5,7 @@ const pageConfig: PageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'xmj.246801.xyz', label: '我的博客' },
+ //   { link: 'xmj.246801.xyz', label: '我的博客' },
     { link: 'https://xmj.246801.xyz/', label: 'Blog' },
     { link: 'mailto:xmj@246801.xyz', label: 'Email Me', highlight: true },
   ],
@@ -81,9 +81,9 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://xmj.246801.xyz/',
+      target: 'https://xmj.246801.xyz',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://xmj.246801.xyz/',
+      statusPageLink: 'https://xmj.246801.xyz',
       timeout: 5000,
     },
   ],
