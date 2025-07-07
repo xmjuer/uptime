@@ -1,6 +1,6 @@
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
-const pageConfig: PageConfig = {
+export const pageConfig: PageConfig = { // Added export keyword
   // Title for your status page
   title: "百晓网站监控",
   // Links shown at the header of your status page, could set `highlight` to `true`
@@ -36,7 +36,7 @@ const pageConfig: PageConfig = {
   },
 }
 
-const workerConfig: WorkerConfig = {
+export const workerConfig: WorkerConfig = { // Added export keyword
   // Write KV at most every 3 minutes unless the status changed
   kvWriteCooldownMinutes: 3,
   // Enable HTTP Basic auth for status page & API by uncommenting the line below, format `<USERNAME>:<PASSWORD>`
@@ -351,14 +351,4 @@ const workerConfig: WorkerConfig = {
       // You need to handle the grace period manually if you want to implement it
     },
     onIncident: async (
-      env: any,
-      monitor: any,
-      timeIncidentStart: number,
-      timeNow: number,
-      reason: string
-    ) => {
-      // This callback will be called when there's an incident for any monitor
-      // Write any Typescript code here
-    },
-  },
-}
+      env: a
