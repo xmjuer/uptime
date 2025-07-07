@@ -354,4 +354,6 @@ const workerConfig: WorkerConfig = {
       env: any,
       monitor: any,
       timeIncidentStart: number,
-      timeNow
+      timeNow: number,
+      reason: string
+    ) => {
