@@ -5,16 +5,16 @@ const pageConfig: PageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-  //  { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://xmj.181910.xyz/', label: '我的博客' },
-    { link: 'mailto:xmj@246801.xyz', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/lyc8503', label: 'GitHub' },
+    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
+    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
   ],
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🔐 Private': ['test_tcp_monitor', 'xmj_181910_xyz'], // Added the new monitor ID to a group or create a new one
   },
 }
 
@@ -34,11 +34,11 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://xmj.246801.xyz',
+      target: 'https://example.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://xmj.246801.xyz',
+      statusPageLink: 'https://example.com',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -74,6 +74,22 @@ const workerConfig: WorkerConfig = {
       tooltip: 'My production server SSH',
       statusPageLink: 'https://example.com',
       timeout: 5000,
+    },
+    // New HTTP Monitor for https://xmj.181910.xyz/
+    {
+      id: 'xmj_181910_xyz',
+      name: 'XMJ 181910 xyz',
+      method: 'GET',
+      target: 'https://xmj.181910.xyz/',
+      tooltip: 'Monitor for https://xmj.181910.xyz/',
+      statusPageLink: 'https://xmj.181910.xyz/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+      // You can add more options here if needed, like responseKeyword, etc.
     },
   ],
   notification: {
