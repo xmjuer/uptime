@@ -27,19 +27,19 @@ const workerConfig: WorkerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
-      // `id` should be unique, history will be kept if the `id` remains constant
+      // `id` should be unique, history will be kept if the `id` remains constant（名字可以天分组）
       id: 'xmj_181910_xyz',
       // `name` is used at status page and callback message
       name: '我的博客',
       // `method` should be a valid HTTP Method
       method: 'POST',
-      // `target` is a valid URL
+      // `target` is a valid URL（监控链接重要）
       target: 'https://xmj.181910.xyz',
-      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip（鼠标放上去会有说明）
       tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page（页面可以点击）
       statusPageLink: 'https://xmj.181910.xyz',
-      // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
+      // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true（false显示延迟列表，TRUE不显示）
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
