@@ -13,7 +13,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
+    '🌐 Public (example group name)': ['xmj_181910_xyz','foo_monitor', 'bar_monitor', 'more monitor ids...'],
     '🔐 Private': ['test_tcp_monitor', 'xmj_181910_xyz'], // Added the new monitor ID to a group or create a new one
   },
 }
