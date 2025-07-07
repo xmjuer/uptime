@@ -13,8 +13,8 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-  //  '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🌐 Public': ['xmj_181910_xyz',],
+    //  '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
+    '🌐 Public': ['xmj_181910_xyz'],
     '🔐 Private': [
       'test_tcp_monitor',
       'file258_file_hf_space',
@@ -354,4 +354,4 @@ const workerConfig: WorkerConfig = {
       env: any,
       monitor: any,
       timeIncidentStart: number,
-      timeNow: number,
+      timeNow
