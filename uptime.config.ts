@@ -142,7 +142,7 @@ const workerConfig: WorkerConfig = {
       name: '节点',
       method: 'GET',
       target: 'https://baixiao112-ti258.hf.space',
-      tooltip: '抱脸下载',
+      tooltip: '节点',
       statusPageLink: 'https://baixiao112-ti258.hf.space',
       hideLatencyChart: true,
       expectedCodes: [200],
