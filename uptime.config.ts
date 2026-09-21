@@ -18,7 +18,7 @@ const pageConfig: PageConfig = {
     '🔐 Private': [
    //   'test_tcp_monitor', // Retained example TCP monitor
       'file258_file_hf_space',
-      'jjdda-file.hf.space',
+      'lxams-ams668.hf.space',
       'cfiles-vscode.hf.space',
       'cfiles_navidrome_hf_space',
       'baixiao112-ti258.hf.space',
@@ -110,12 +110,12 @@ const workerConfig: WorkerConfig = {
     },
     // New HTTP Monitors (from your first request)
     {
-      id: 'jjdda-file.hf.space',
-      name: '百晓快递柜',
+      id: 'lxams-ams668.hf.space',
+      name: '喜羊羊hermers',
       method: 'GET',
-      target: 'https://jjdda-file.hf.space',
-      tooltip: '百晓快递柜',
-      statusPageLink: 'https://jjdda-file.hf.space',
+      target: 'https://lxams-ams668.hf.space',
+      tooltip: '喜羊羊hermers',
+      statusPageLink: 'https://lxams-ams668.hf.space',
       hideLatencyChart: true,
       expectedCodes: [200],
       timeout: 10000,
