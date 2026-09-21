@@ -117,7 +117,7 @@ const workerConfig: WorkerConfig = {
       tooltip: '喜羊羊hermers',
       statusPageLink: 'https://lxams-ams668.hf.space',
       hideLatencyChart: true,
-      expectedCodes: [200],
+      expectedCodes: [200,301,302],
       timeout: 10000,
       headers: {
         'User-Agent': 'Uptimeflare',
