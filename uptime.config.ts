@@ -20,6 +20,7 @@ const pageConfig: PageConfig = {
       'file258_file_hf_space',
       'lxams-ams668.hf.space',
       'cilicili666-cilicili666.hf.space',
+      'gy669-gy669.hf.space',
       'cfiles_navidrome_hf_space',
       'baixiao112-ti258.hf.space',
       'aikan258_xlx_hf_space',
